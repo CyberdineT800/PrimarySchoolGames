@@ -1,4 +1,3 @@
-// Buffer balloon sprite images //
 const imgBalloonBlue = new Image();
 imgBalloonBlue.src = "assets/images/balloon-blue-sprite.png";
 const imgBalloonOrange = new Image();
@@ -12,7 +11,6 @@ imgBalloonGreen.src = "assets/images/balloon-green-sprite.png";
 const imgBalloonYellow = new Image();
 imgBalloonYellow.src = "assets/images/balloon-yellow-sprite.png";
 
-// Buffer sound effects, set volume to 0.6 //
 const soundPop = new Audio("assets/sounds/pop.mp3");
 soundPop.volume = 0.5;
 const soundDeflate = new Audio("assets/sounds/deflate.mp3");
@@ -24,7 +22,6 @@ soundUnlucky.volume = 0.5;
 const soundWellDone = new Audio("assets/sounds/well-done.mp3");
 soundWellDone.volume = 0.5;
 
-// Initialise global variables //
 let bpmSoundEffectsMuted = false;
 let bpmGameMode;
 let bpmQno;

@@ -7,22 +7,15 @@
     <meta name="keywords" content="Maths, Game, Interactive">
     <meta name="author" content="Richard Ash">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Link to Balloon Favicon -->
     <link rel="shortcut icon" href="assets/images/balloon-favicon.ico" type="image/x-icon">
-    <!-- Link to Bootstrap 4.4.1 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Link to Nunito font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Link to Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/7863bec69d.js" crossorigin="anonymous"></script>
-    <!-- Link to Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Matematika va Sharlar</title>
 </head>
 <body>
-    <!-- Balloon Pop Maths Home Page, Menu -->
     <section id="heading-section" class="container-sm">
         <div class="row">
             <div class="col-12 d-md-none container-heading-main text-center">
@@ -34,7 +27,7 @@
                     <h1 class="heading-main">Sharlar</h1>
                 </a>
             </div>
-            <!-- Screens larger than md -->
+
             <div class="col-12 d-none d-md-block container-heading-main-large text-center">
                 <a href="index.html">
                     <h1 class="heading-main">Matematik va<img src="assets/images/balloon-purple-cropped.png" alt="Sharning yorilishi"> Sharlar</h1>
@@ -42,12 +35,12 @@
             </div>
         </div>
     </section>
-    <!-- Options -->
+
     <section id="options-section" class="container-sm" aria-label="Options Section">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <!-- Game Mode Options -->
+
                 <div class="btn-group btn-group-toggle d-flex w-100 container-button-group" data-toggle="buttons">
                     <label id="multiply" class="btn btn-xl w-100 btn-info btn-text active">
                         <input type="radio" aria-label="Multiplication" name="game-mode" checked> x
@@ -62,15 +55,15 @@
                         <input type="radio" aria-label="Subtraction" name="game-mode"> -
                     </label>
                 </div>
-                <!-- High Score -->
+
                 <div class="container-button-group d-flex w-100">
                     <span id="highscore" class="btn-xl-nofill w-100 btn-text-score">Yuqori natija: 0 / 10</span> 
                 </div>
-                 <!-- Play Button, hidden until window has finished loading -->
+
                 <div class="container-button-group d-flex w-100">
                     <button id="play" type="button" class="btn btn-xxl w-100 btn-info btn-text">O'ynash</button>
                 </div>
-                <!-- Audio Controls -->
+
                 <div class="btn-group btn-group-toggle d-flex w-100 container-button-group" data-toggle="buttons">
                     <label id="audio-on" class="btn btn-xl w-100 btn-info btn-text active">
                         <input type="radio" aria-label="Audio On" name="audio-on" checked><i class="fas fa-volume-up"></i>
@@ -79,17 +72,17 @@
                         <input type="radio" aria-label="Audio Off" name="audio-off"><i class="fas fa-volume-mute"></i>
                     </label>
                 </div>
-                <!-- Options Button -->
+
                 <div class="container-button-group d-flex w-100">
                     <button type="button" data-toggle="collapse" data-target="#options" aria-expanded="false" aria-controls="options" class="btn btn-xl w-100 btn-info btn-text">Sozlamalar</button>
                 </div>
             </div>
         </div>
-        <!-- Collapsing Options -->
+
         <div class="row collapse" id="options">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <!-- Options applicable to all games -->
+
                 <div class="btn-group btn-group-toggle d-flex w-100 container-button-group" data-toggle="buttons">
                     <label id="10q" class="btn btn-xl w-100 btn-info btn-text active">
                         <input type="radio" name="questions" checked> 10 ta savol
@@ -109,7 +102,7 @@
                         <input type="radio" name="difficulty"> Qiyin
                     </label>
                 </div>
-                <!-- Multiplication and Division game options -->
+
                 <div id="options-multiply-divide">
                     <div class="row">
                         <div class="col d-flex w-100 container-button">
@@ -217,7 +210,7 @@
             <div class="col-md-2"></div>
         </div>
     </section>
-    <!-- Information -->
+
     <section id="information-section" class="container-sm" aria-label="Information Section">
         <div class="row">
             <div class="col-md-2"></div>
@@ -227,11 +220,10 @@
                 </div>
             </div>
         </div>
-        <!-- Collapsing Information -->
+
         <div class="row collapse" id="information">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <!-- Information Text -->
                 <div class="container-text-information">
                     <p class="text-information">
                         Matematika va Sharlar - bu matematika ko'nikmalarini oshirishga va mustaqil ta'limni kuchaytirishga 
@@ -244,9 +236,8 @@
             <div class="col-md-2"></div>
         </div>
     </section>
-    <!-- Game Section -->
+
     <section id="game-section" class="container-xl d-none" aria-label="Game Section">
-        <!-- Home Button -->
         <div id="game-section-home" class="row container-button-game">
             <div class="col text-left pr-0">
                 <button id="btn-game-section-home" type="button" data-toggle="button" 
@@ -257,15 +248,14 @@
                 <div id="score" class="btn btn-xl-nofill btn-text-score d-none">Ball: 0 / 20</div>
             </div>
         </div>
-        <!-- Game Loader, shown until window has completed loading -->
+
         <div id="game-loader" class="container-xl text-center">
             <div class="container-loader"></div>
             <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             <div class="container-loader"></div>
         </div>
-        <!-- Game Div, hidden until window has completed loading -->
+
         <div id="game-canvas-controls" class="d-none">
-            <!-- Game Canvas, 2 panels - stacked on medium and small devices -->
             <div class="row game-section-balloons p-0 m-0">
                 <div class="col-lg-6 p-0 m-0">
                     <div class="row canvas-balloon p-0 m-0">
@@ -304,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Game Controls - 3 columns, stacked on small and medium devices -->
+
             <div class="row game-section-controls p-0 m-0">
                 <div class="col-lg-4">
                     <div class="row">
@@ -330,7 +320,6 @@
         </div>
     </section>
 
-    <!-- JavaScript links -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

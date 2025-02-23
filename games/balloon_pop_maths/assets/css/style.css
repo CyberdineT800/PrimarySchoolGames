@@ -1,7 +1,6 @@
 :root {
     --titlefont: "Whale I Tried", sans-serif;
     --bodyfont: 'Nunito', sans-serif;
-/*-- Colour Palette--*/
     --purplelight: #908CD9;
     --purplemed: #9C70BD;
     --purpledark: #A2529A;
@@ -24,7 +23,6 @@
          url('../fonts/whale-i-tried.svg#Whale I Tried') format('svg');
 }
 
-/*-- HTML--*/
 html {
     font-size: 62.5%;
 }
@@ -36,7 +34,6 @@ body {
     background-image: linear-gradient(to bottom, #7cc0ff, #77c4fe, #72c7fc, #6fcafa, #6ecdf8, #6fd2f7, #71d7f6, #75dcf5, #7de4f5, #86ecf6, #92f4f5, #9efbf5);
 }
 
-/*-- Containers --*/
 .container-heading-main {
     padding-top: 1.0rem;
     padding-bottom: 0.5rem;
@@ -81,7 +78,6 @@ body {
     padding-top: 20rem;
 }
 
-/*-- Headings --*/
 .heading-main {
     font-family: var(--titlefont);
     font-size: 6rem;
@@ -89,7 +85,6 @@ body {
     color: var(--bluevlight);
 }
 
-/*-- Heading Image --*/
 .container-heading-main img,
 .container-heading-main-large img {
     width: 8rem;
@@ -100,7 +95,6 @@ body {
     margin-left: -40px;
 }
 
-/*-- Buttons --*/
 .btn-text {
     color: var(--bluevlight);
 }
@@ -137,13 +131,11 @@ body {
     border-color: var(--bluemed);
 }
 
-/*-- Button Hover Styling --*/
 .btn-text-score:hover {
     color: var(--purpledark);
     cursor: auto;
 }
 
-/*-- Button Pseudo Class Styling --*/
 .btn-xl-focus-none:focus,
 .btn-xl-focus-none:visited {
     background-color: var(--purplelight);
@@ -151,7 +143,6 @@ body {
     border-color: var(--bluemed);
 }
 
-/*-- Information Text --*/
 .text-information {
     font-size: 1.7rem;
     padding: 1.0rem 1.0rem 1.0rem 1.0rem;
@@ -160,23 +151,17 @@ body {
     border-radius: 0.5rem;
 }
 
-/*-- 404 Error Heading Styling --*/
 .text-404 h4 {
     font-size: 2.2rem;
     color: var(--purplemed);
     font-weight: 700;
 }
 
-/*-- 404 Error Signpost Icon Styling --*/
 .container-404 i {
     padding-top: 0.5rem;
     color: var(--purplemed);
 }
 
-/*-- Game Elements --*/
-
-/*-- Game Loader --*/
-/*-- Many thanks to loading.io https://loading.io/css/ --*/
 .lds-grid {
   display: inline-block;
   position: relative;
@@ -256,14 +241,10 @@ body {
   }
 }
 
-/*-- Set row height for balloon canvas elements --*/
-/*-- Row height calculated using viewport height --*/
 .canvas-balloon {
     height: var(--canvassize);
 }
 
-/*-- Game Canvas --*/
-/*-- Width and height calculated using viewport height --*/
 .canvas-balloon canvas {
     position: absolute;
     width: var(--canvassize);
@@ -271,8 +252,6 @@ body {
     z-index: -1;
 }
 
-/*-- Game Answer Balloon Text --*/
-/*-- Font size, line height, width and height calculated using viewport height --*/
 .balloon-answer-text {
     position: absolute;
     color: var(--bluevlight);
@@ -286,12 +265,10 @@ body {
     text-shadow: 1px 1px 2px var(--medgrey);
 }
 
-/*-- Game Answer Balloon Text Hover Styling --*/
 .balloon-answer-text:hover {
   cursor: url('../images/pin.svg'), crosshair; 
 }
 
-/*-- Game Question --*/
 .game-section-controls #question {
     color: var(--bluevlight);
     text-align: center;
@@ -302,7 +279,6 @@ body {
     border: 1px solid var(--bluemed);
 }
 
-/*-- Game Audio Controls --*/
 #audio-controls i {
     padding: 0.5rem 1.0rem 0.5rem 1.0rem;
     font-size: 2rem;
@@ -314,7 +290,6 @@ body {
     color: var(--purpledark);
 }
 
-/*-- Game Health --*/
 .game-section-controls #health {
     color: var(--redlight);
     text-align: center;
@@ -325,7 +300,6 @@ body {
     font-size: 2rem;
 }
 
-/*-- Game Score --*/
 .score {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -333,7 +307,6 @@ body {
     text-align: right;
 }
 
-/*-- Generic Feedback Modal --*/
 .modal-dialog h2,
 .modal-dialog span {
     font-size: 2rem;
@@ -349,7 +322,6 @@ body {
     color: var(--purpledark);
 }
 
-/*--Footer--*/
 .container-footer a {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -363,7 +335,6 @@ body {
     color: var(--purplemed);
 }
 
-/*--Navigation Links--*/
 .container-heading-main a:active,
 .container-heading-main-large a:active {
     color: var(--bluevlight);
@@ -413,14 +384,10 @@ body {
     text-decoration: none;
 }
 
-/*-- Bootstrap Class Overrides --*
-
-/*-- Bootstrap Button Class Overrides --*/
 .btn-lg {
     font-size: 1.6rem;
 }
 
-/*--Bootstrap Button Pseudo Class Overrides--*/
 .btn-info:active {
     background-color: var(--purpledark);
 }
@@ -437,7 +404,6 @@ body {
     background-color: var(--purplemed); 
 }
 
-/*-- Bootstrap Modal Class Overrides --*/
 .modal-content {
     border: 1px solid var(--purplemed);
     border-radius: 1.5rem;
@@ -457,9 +423,6 @@ body {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
-/*-- Media Queries --*/
-
-/*-- Media query to re-size heading, reposition heading image and re-size Play button for screen sizes under 680px high --*/
 @media (max-height: 680px) {
     .heading-main {
         font-size: 5rem;    
@@ -473,14 +436,12 @@ body {
     }
 }
 
-/*-- Media query to fix balloon text height to a maximum of 5rem for devices over 926px high --*/
  @media (min-height: 926px) {
     .balloon-answer-text {
         font-size: 5rem;
     }
  }
 
-/*-- Media query to re-size balloon canvas and text elements for large devices over 992px wide --*/
  @media (min-width: 992px) {
     .canvas-balloon {
         min-height: 22rem;
