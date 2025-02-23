@@ -17,5 +17,6 @@ function resetGameList() {
     gameListLeft.classList.remove('moved-left', 'moved-right');
     gameListRight.classList.remove('moved-left', 'moved-right');
 
-    document.getElementById("game-frame").src = `fireworks/index.html`;
+    // document.getElementById("game-frame").src = `fireworks/index.html`;
+    document.getElementById("game-frame").src = ``;
 }
