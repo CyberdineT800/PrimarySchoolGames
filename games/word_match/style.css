@@ -1,0 +1,12 @@
+.game-area {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.word, .image {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}

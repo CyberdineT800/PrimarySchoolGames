@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        <span class="grad1">P r i</span>
+        <span class="grad2">m a r</span>
+        <span class="grad3">y S</span>
+        <span class="grad4">c h o</span>
+        <span class="grad5">o l  🎮</span>
+    </h1>
+    
+    <div id="game-list-left">
+        <button onclick="loadGame('word_match')">📝 So'zlarni Moslashtirish</button>
+        <button onclick="loadGame('math_quiz')">🔢 Matematik Test</button>
+        <button onclick="loadGame('kids_english')">🏅 Ingliz tili</button>
+    </div>
+    
+    <div id="game-list-right">
+        <button onclick="loadGame('balloon_pop')">🎈 Sharlarni Portlatish</button>
+        <button onclick="loadGame('balloon_pop_maths')">🔢 Matematika va Sharlar</button>
+        <button onclick="loadGame('catch_apple')">🍎 Olmalarni tutib ol</button>
+    </div>
+    
+    <div id="refresh-container">
+        <button id="refresh-btn" onclick="resetGameList()">🔄 Refresh</button>
+    </div>
+
+    <!-- <iframe id="game-frame" src="" frameborder="0"></iframe> -->
+    <iframe id="game-frame" src="fireworks/index.html" frameborder="0"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
