@@ -1,40 +1,53 @@
-function loadGame(gameName) {
-    const iframe = document.getElementById('game-frame');
-    const gameListLeft = document.getElementById('game-list-left');
-    const gameListRight = document.getElementById('game-list-right');
+let currentGame = '';
+        
+$(document).ready(function() {
+    $('#pages').turn({
+        display: 'single',
+        acceleration: true,
+        gradients: true,
+        duration: 500,
+        elevation: 350,
+        when: {
+            turned: function(e, page) {
+                if (page == 1) {
+                    //$('#game-list-left, #game-list-right').removeClass('moved-left moved-right');
+                    document.getElementById('game-frame').src = ``;
+                } else if (page == 2) {
+                    //$('#game-list-left').addClass('moved-left');
+                    //$('#game-list-right').addClass('moved-right');
+                }
+            }
+        }
+    });
+});
 
-    if (gameListLeft && gameListRight) {
-        gameListLeft.classList.add('moved-left');
-        gameListRight.classList.add('moved-right');
+function loadGame(gameName) {
+    if (gameName === '') {
+        $('#pages').turn('page', 1);
+        return;
     }
     
-    iframe.classList.add('page-turn');
+    const currentPage = $('#pages').turn('page');
+    
+    if (currentPage === 2 && currentGame !== gameName) {
+        $('#pages').turn('page', 1);
+        
+        setTimeout(() => {
+            document.getElementById('game-frame').src = `games/${gameName}/index.html`;
+            currentGame = gameName;
+            
+            $('#pages').turn('next');
+        }, 800); 
+    } 
 
-    setTimeout(() => {
-        iframe.src = `games/${gameName}/index.html`;
-    }, 200);
-
-    setTimeout(() => {
-        iframe.classList.remove('page-turn');
-    }, 600);
+    else if (currentPage === 1) {
+        document.getElementById('game-frame').src = `games/${gameName}/index.html`;
+        currentGame = gameName;
+        
+        $('#pages').turn('next');
+    }
 }
 
 function resetGameList() {
-    const iframe = document.getElementById('game-frame');
-    const gameListLeft = document.getElementById('game-list-left');
-    const gameListRight = document.getElementById('game-list-right');
-
-    gameListLeft.classList.remove('moved-left', 'moved-right');
-    gameListRight.classList.remove('moved-left', 'moved-right');
-
-    iframe.classList.add('page-turn');
-
-    setTimeout(() => {
-        iframe.src = ``;
-        // iframe.src = `fireworks/index.html`;
-    }, 200);
-    
-    setTimeout(() => {
-        iframe.classList.remove('page-turn');
-    }, 600);
+    $('#pages').turn('page', 1);
 }
