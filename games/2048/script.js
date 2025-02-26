@@ -191,8 +191,18 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreDisplay.innerHTML = score;
     resultDisplay.innerHTML = "Raqamlarni birlashtirish orqali <b>2048</b> hosil qiling!";
 
-    generate();
-    generate();
+    location.reload();
+    // upButton.disabled = false;
+    // leftButton.disabled = false;
+    // rightButton.disabled = false;
+    // downButton.disabled = false;
+
+    // document.addEventListener("keyup", control);
+
+    // addColours();
+
+    // generate();
+    // generate();
   });
 
   let touchStartX = 0;
@@ -256,9 +266,9 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < squares.length; i++) {
       if (squares[i].innerHTML == 2048) {
         resultDisplay.innerHTML = "Ofarin!";
-        document.removeEventListener("keyup", control);
-        disableButtons();
-        setTimeout(() => clear(), 3000);
+        //document.removeEventListener("keyup", control);
+        //disableButtons();
+        setTimeout(() => clear(), 1000);
       }
     }
   }
@@ -272,9 +282,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (zeros === 0) {
       resultDisplay.innerHTML = "Yutqazdingiz";
-      document.removeEventListener("keyup", control);
-      disableButtons();
-      setTimeout(() => clear(), 3000);
+      //document.removeEventListener("keyup", control);
+      //disableButtons();
+      setTimeout(() => clear(), 100);
     }
   }
 

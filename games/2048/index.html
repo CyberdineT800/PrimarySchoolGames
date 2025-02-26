@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2048</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" charset="utf-8"></script>
     <link rel="icon" href="https://i.ibb.co/M6KTWnf/pic.jpg" />
+  </head>
   <body>
     <div class="container">
       <div class="info">
@@ -16,19 +17,26 @@
         </div>
       </div>
       <span id="result">Raqamlarni birlashtirish orqali <b>2048</b> hosil qiling!</span>
-      <div class="grid"></div>
       
-      <div class="controls">
-        <div class="controls-row">
-          <button id="up-button" class="control-btn">&#8593;</button>
+      <div class="game-area">
+        <div class="grid"></div>
+        
+        <div class="controls">
+          <div class="controls-row">
+            <button id="refresh-button">&#10554;</button>
+          </div>
+          <div class="controls-row">
+            <button id="up-button" class="control-btn">&#8593;</button>
+          </div>
+          <div class="controls-row">
+            <button id="left-button" class="control-btn">&#8592;</button>
+            <button id="down-button" class="control-btn">&#8595;</button>
+            <button id="right-button" class="control-btn">&#8594;</button>
+          </div>
         </div>
-        <div class="controls-row">
-          <button id="left-button" class="control-btn">&#8592;</button>
-          <button id="down-button" class="control-btn">&#8595;</button>
-          <button id="right-button" class="control-btn">&#8594;</button>
-        </div>
-        <button id="refresh-button" class="control-btn">Refresh</button>
       </div>
     </div>
+    
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
