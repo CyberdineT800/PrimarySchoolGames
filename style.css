@@ -225,11 +225,11 @@ button:hover {
         margin-left: 7%;
     }
     #game-container {
-        width: 95%;
+        width: 75%;
         height: 95%;
     }
     .page-background {
-        width: 95%;
+        width: 75%;
         height: 95%;
     }
 }
@@ -262,11 +262,11 @@ button:hover {
         margin-left: auto;
     }
     #game-container {
-        width: 75%;
+        width: 55%;
         height: 75%;
     }
     .page-background {
-        width: 75%;
+        width: 55%;
         height: 75%;
     }
 }
@@ -293,12 +293,12 @@ button:hover {
         height: 65vh;
     }
     #game-container {
-        width: 55%;
-        height: 55%;
+        width: 45%;
+        height: 75%;
     }
     .page-background {
-        width: 55%;
-        height: 55%;
+        width: 45%;
+        height: 75%;
     }
 }
 
@@ -321,10 +321,10 @@ button:hover {
     }
     #game-container {
         width: 35%;
-        height: 35%;
+        height: 75%;
     }
     .page-background {
         width: 35%;
-        height: 35%;
+        height: 75%;
     }
 }
