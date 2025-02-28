@@ -10,11 +10,11 @@ $(document).ready(function() {
         when: {
             turned: function(e, page) {
                 if (page == 1) {
-                    //$('#game-list-left, #game-list-right').removeClass('moved-left moved-right');
+                    $('#game-list-left, #game-list-right').removeClass('moved-left moved-right');
                     document.getElementById('game-frame').src = ``;
                 } else if (page == 2) {
-                    //$('#game-list-left').addClass('moved-left');
-                    //$('#game-list-right').addClass('moved-right');
+                    $('#game-list-left').addClass('moved-left');
+                    $('#game-list-right').addClass('moved-right');
                 }
             }
         }
