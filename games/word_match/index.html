@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h2>So'zni rasmi bilan moslashtiring</h2>
-<div class="game-area">
-    <div id="words">
-        <div class="word" draggable="true" data-word="olma">Olma</div>
-        <div class="word" draggable="true" data-word="kitob">Kitob</div>
+    <h2>So'zni rasmi bilan moslashtiring</h2>
+    
+    <div class="game-container">
+        <div class="column" id="words-column"></div>
+        <div class="column" id="emojis-column"></div>
     </div>
-    <div id="images">
-        <div class="image" data-word="olma">🍎</div>
-        <div class="image" data-word="kitob">📖</div>
+    
+    <button class="retry-button" id="retry-button">Qaytadan</button>
+    
+    <canvas id="connection-canvas"></canvas>
+    
+    <div class="dialog" id="error-dialog">
+        <p class="error-message">🤭 Noto'g'ri, qayta urinib ko'ring!</p>
+        <button id="dialog-close">Yopish</button>
     </div>
-</div>
 
-<script src="script.js"></script>
+    <div class="dialog" id="win-dialog">
+        <p class="success-message">😊 Ofarin! Barcha so'zlarni to'g'ri moslashtirdingiz!</p>
+        <button id="win-dialog-close">Yopish</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

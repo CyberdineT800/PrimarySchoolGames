@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Izlovchi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="icon" href="https://i.ibb.co/M6KTWnf/pic.jpg" />
+  </head>
+
+  <body>
+    <h1>Tuzoqlar soni: <span id="mines-count">0</span></h1>
+
+    <div class="game-container">
+      <div id="board"></div>
+      <div class="controls">
+        <button id="flag-button">🚩</button>
+        <button id="refresh-button">🔄</button>
+      </div>
+    </div>
+    
+    <div class="rules-container">
+      <h2>O'yin qoidalari</h2>
+      <ul>
+        <li>Katakcha ustiga bosib, uning ostida nima borligini ko'ring.</li>
+        <li>Raqamlar bu katakchaga qancha tuzoq qo'shni ekanligini ko'rsatadi.</li>
+        <li>Shubhali kataklarni belgilash uchun bayroq tugmasidan (🚩) foydalaning.</li>
+        <li>G'alaba qozonish uchun tuzoqlardan tashqari barcha katakchalarni tozalang.</li>
+        <li>Agar tuzoqli katakchani bossangiz, yutqazasiz!</li>
+        <li>Yangi o'yinni boshlash uchun yangilash tugmasidan (🔄) foydalaning.</li>
+      </ul>
+    </div>
+    
+    <div id="game-dialog" class="dialog">
+      <div class="dialog-content">
+        <p id="dialog-message"></p>
+        <button id="dialog-close">Yopish</button>
+      </div>
+    </div>
+  </body>
+</html>
