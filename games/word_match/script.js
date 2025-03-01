@@ -37,6 +37,17 @@ const allWordPairs = [
     { word: "Banan", emoji: "🍌" },
     { word: "Soyabon", emoji: "☂️" },
     { word: "Qor parcha", emoji: "❄️" },
+    { word: "Oltiburchak", emoji: "⎔" },
+    { word: "To'rtburchak", emoji: "⃞" },
+    { word: "Beshburchak", emoji: "⬠" },
+    { word: "Uchburchak", emoji: "△" },
+    { word: "Parallelogram", emoji: "▰" },
+    { word: "Halqa", emoji: "◯" },
+    { word: "Romb", emoji: "◆" },
+    { word: "Kvadrat", emoji: "⬜" },
+    { word: "Doira", emoji: "⚫️" },
+    { word: "Sakkizburchak", emoji: "🛑" },
+    { word: "Sakkizburchak", emoji: "⯄" },
     { word: "Qalam", emoji: "✏️" }
 ];
 
